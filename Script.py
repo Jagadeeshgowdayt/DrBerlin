@@ -674,7 +674,7 @@ Also your tutorial will be Added Your Group..."""
 
 
     RENAME_TXT = """
-🌌 <b><u>HOW TO SET THUMBNAIL</u></b>
+  <b><u>HOW TO SET THUMBNAIL</u></b>
   
 •> /set_thumb - send any picture to automatically set thumbnail.
 •> /del_thumb use this command and delete your old thumbnail.
