@@ -2089,16 +2089,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "referfri":
         buttons = [[
-            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.REFERFRI,
+            text=script.REFERFRI_TXT.format(temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
