@@ -13,9 +13,9 @@ class script(object):
     
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
-
-
-     RECENT = """<b>Recently Uploaded New Movies</b>
+    
+    
+    RECENT = """<b>Recently Uploaded New Movies</b>
 Press 1 for Good Night
 Press 2 for Vikipedia
 Press 3 for Oru Nalla Naal Paathu
