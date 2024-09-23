@@ -51,7 +51,7 @@ async def start(client, message):
                 InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸 ', callback_data="shortlink_info"),
                 InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="referfri")
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='recent'),
                 InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('🆓 Gᴇᴛ Fʀᴇᴇ🎁 Pʀᴇᴍɪᴜᴍ ⭐ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🆓', callback_data='subscription')
