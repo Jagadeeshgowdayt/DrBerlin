@@ -15,6 +15,20 @@ class script(object):
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
 
+     RECENT = """<b>Recently Uploaded New Movies</b>
+Press 1 for Good Night
+Press 2 for Vikipedia
+Press 3 for Oru Nalla Naal Paathu
+Press 4 for Shaakuntalam
+Press 5 for Wolfhound
+Press 6 for Anuragam
+Press 7 for Sankarabharanam
+Press 8 for Wow 
+Press 9 for Savitri
+Press 10 for Uncharted
+Press 11 for Thandatti"""
+
+
     ABOUT_TXT = """<b>Refer your link to your friends, family, channels, and groups to get free premium for {}.
 Copy and send this link to all your friends and WhatsApp groups:
 
