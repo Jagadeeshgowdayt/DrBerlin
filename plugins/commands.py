@@ -60,10 +60,7 @@ async def start(client, message):
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸 ', callback_data="shortlink_info"),
-                InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="referfri")
-            ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
             ],[
                 InlineKeyboardButton('🆓 Gᴇᴛ Fʀᴇᴇ🎁 Pʀᴇᴍɪᴜᴍ ⭐ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🆓', callback_data='subscription')
             ],[
@@ -130,10 +127,7 @@ async def start(client, message):
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸 ', callback_data="shortlink_info"),
-                InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="referfri")
-            ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
             ],[
                 InlineKeyboardButton('🆓 Gᴇᴛ Fʀᴇᴇ🎁 Pʀᴇᴍɪᴜᴍ ⭐ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🆓', callback_data='subscription')
             ],[
@@ -144,10 +138,7 @@ async def start(client, message):
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸 ', callback_data="shortlink_info"),
-                InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="referfri")
-            ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
             ],[
                 InlineKeyboardButton('🆓 Gᴇᴛ Fʀᴇᴇ🎁 Pʀᴇᴍɪᴜᴍ ⭐ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🆓', callback_data='subscription')
             ],[
