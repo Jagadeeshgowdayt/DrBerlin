@@ -1952,37 +1952,45 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         if PREMIUM_AND_REFERAL_MODE == True:
-        buttons = [[InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')]]
-    else:
-        buttons = [[
-            InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ],[
-            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-            InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
-        ],[
-            InlineKeyboardButton('🆓 Gᴇᴛ Fʀᴇᴇ🎁 Pʀᴇᴍɪᴜᴍ ⭐ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🆓', callback_data='subscription')
-        ],[
-            InlineKeyboardButton('🤑Aᴅᴅ ʙᴏᴛ ᴀɴᴅ Eᴀʀɴ 💸 Mᴏɴᴇʏ ᴡɪᴛʜ Gʀᴏᴜᴘ🤑', callback_data="shortlink_info")
-        ]]
-    if CLONE_MODE == True:
-        buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
-
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await client.edit_message_media(
-        chat_id=query.message.chat.id,
-        message_id=query.message.id,
-        media=InputMediaPhoto(random.choice(PICS))
-    )
-    
-    await query.message.edit_text(
-        text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
-        reply_markup=reply_markup,
-        parse_mode=enums.ParseMode.HTML
-    )
-    
-    await query.answer(MSG_ALRT)
-
+            buttons = [[
+                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
+            ],[
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            ]]
+        else:
+            buttons = [[
+                InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            ]]
+        if CLONE_MODE == True:
+            buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        await query.answer(MSG_ALRT)
 
     elif query.data == "clone":
         buttons = [[
