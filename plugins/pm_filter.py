@@ -1,5 +1,5 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Don't Remove Credit @Drberlinbot
+# Subscribe YouTube Channel For Amazing Bot @Drberlinbot
 # Ask Doubt on telegram @Drberlinbot
 
 import os, logging, string, asyncio, time, re, ast, random, math, pytz, pyrogram
