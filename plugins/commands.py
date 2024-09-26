@@ -520,7 +520,7 @@ async def start(client, message):
                     )
                     return
             if STREAM_MODE == True:
-                button = [
+                button = [[
                         InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
                         InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
@@ -589,7 +589,7 @@ async def start(client, message):
             )
             return
     if STREAM_MODE == True:
-        button = [
+        button = [[
                         InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
                         InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
