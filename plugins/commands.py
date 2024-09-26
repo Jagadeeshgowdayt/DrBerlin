@@ -257,10 +257,13 @@ async def start(client, message):
                     
                 if STREAM_MODE == True:
                     button = [
-                        InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                    ],[
-                        InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
-                    ]]
+    [
+        InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+    ],
+    [
+        InlineKeyboardButton('🗣️𝐫𝐞𝐟𝐞𝐫 𝐟𝐫𝐢𝐞𝐧𝐝𝐬🤝', callback_data="ref")
+    ]
+]
                 else:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
