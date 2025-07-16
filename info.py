@@ -51,9 +51,9 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-100
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jagadeesh:jagadeesh@jagadeesh.r4eca.mongodb.net/?retryWrites=true&w=majority&appName=jagadeesh")
-DATABASE_NAME = environ.get('DATABASE_NAME', "jagadeesh")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeesh')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jagadeesh:jagadeesh@jagadeesh.zjibz.mongodb.net/?retryWrites=true&w=majority&appName=jagadeesh")
+DATABASE_NAME = environ.get('DATABASE_NAME', "jagadeeshs")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeeshs')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
