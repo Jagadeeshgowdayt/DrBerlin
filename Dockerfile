@@ -1,16 +1,19 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.12-slim
 
-# Update sources to use Debian archive since buster is EOL
-RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list \
-    && sed -i 's|http://security.debian.org/debian-security|http://archive.debian.org/debian-security|g' /etc/apt/sources.list \
-    && apt update && apt upgrade -y
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y --no-install-recommends \
+        git build-essential python3-dev \
+        libjpeg-dev zlib1g-dev libpng-dev libfreetype6-dev \
+        liblcms2-dev libopenjp2-7-dev libtiff-dev \
+        tk-dev tcl-dev && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /DreamxBotz
 
-RUN pip3 install -U pip && pip3 install -U -r /requirements.txt
-RUN mkdir /DQTheFileDonor
-WORKDIR /DQTheFileDonor
-COPY start.sh /start.sh
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip --root-user-action=ignore && \
+    pip install --no-cache-dir -r requirements.txt --root-user-action=ignore
 
-CMD ["/bin/bash", "/start.sh"]
+COPY . .
+
+CMD ["python3", "bot.py"]
